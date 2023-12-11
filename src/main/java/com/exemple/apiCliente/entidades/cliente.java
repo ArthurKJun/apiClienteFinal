@@ -20,6 +20,7 @@ public class cliente{
 	
 	public cliente(long id, String nome, String cpf, String email, String fone, String endereco, int numero) {
 		
+		super();
 		this.id = id;
 		this.nome = nome;
 		this.cpf = cpf;
@@ -31,7 +32,7 @@ public class cliente{
 	}
 	
 	public cliente() {
-		
+		super();
 	}	
 	
 	public long getId() {
