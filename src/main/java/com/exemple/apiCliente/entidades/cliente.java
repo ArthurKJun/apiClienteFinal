@@ -6,7 +6,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class cliente{	
+
+public class Cliente{	
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +19,7 @@ public class cliente{
 	private String endereco;
 	private int numero;
 	
-	public cliente(long id, String nome, String cpf, String email, String fone, String endereco, int numero) {
+	public Cliente(long id, String nome, String cpf, String email, String fone, String endereco, int numero) {
 		
 		super();
 		this.id = id;
@@ -31,7 +32,7 @@ public class cliente{
 		
 	}
 	
-	public cliente() {
+	public Cliente() {
 		super();
 	}	
 	
